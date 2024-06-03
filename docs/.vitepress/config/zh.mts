@@ -15,7 +15,6 @@ export const zh = defineConfig({
             }
         },
 
-
         footer: {
             message: 'Minecraft - 次梦幻境',
             copyright: `版权所有 © 2023-${new Date().getFullYear()} 次梦幻境`,
