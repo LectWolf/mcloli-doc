@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://mcloli.cn/logo.png" alt="DreamCloud" width="200"></a>
+  <a href="https://mcloli.cn/"><img src="https://mcloli.cn/logo.png" alt="DreamCloud" width="200"></a>
   <br>
   次梦幻境-Wiki
   <br>
