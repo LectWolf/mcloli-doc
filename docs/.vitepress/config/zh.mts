@@ -12,6 +12,10 @@ export const zh = defineConfig({
             '/guide/': {
                 base: '/guide/',
                 items: sidebarGuide(),
+            },
+            '/playstyle/': {
+              base: '/playstyle/',
+              items: sidebarStyle(),
             }
         },
 
@@ -49,15 +53,9 @@ export const zh = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-      {
-        text: '游玩指北',
-        link: '/guide/how-to-play',
-        activeMatch: '/guide/'
-      },
-      {
-        text: '更新日志',
-        link: '/update'
-      },
+      {text: '游玩指北',link: '/guide/how-to-play',activeMatch: '/guide/'},
+      {text: '玩法',link: '/playstyle/server-terminal',activeMatch: '/playstyle/'},
+      {text: '更新日志',link: '/update'},
     ]
 }
 
@@ -67,21 +65,36 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: '服务器简介',
             collapsed: false,
             items: [
-                {
-                    text: '游玩指北',
-                    link: 'how-to-play'
-                },
-                {
-                  text: '服务器规则',
-                  link: 'server-rule'
-                },
-                {
-                  text: '联系我们',
-                  link: 'server-contact'
-                }
+                {text: '游玩指北',link: 'how-to-play'},
+                {text: '服务器规则',link: 'server-rule'},
+                {text: '联系我们',link: 'server-contact'}
             ]
-        }
+        },
+        {
+          text: '游玩指南',
+          collapsed: false,
+          items: [
+            {text: '萌新教程',link: 'newbie-tutorial'},
+            {text: '手机端教程',link: 'mobile-tutorial'}
+          ]
+        },
+        {text: '服务器玩法',base: '/playstyle/',link: 'server-terminal'}
+        
     ]
+}
+
+function sidebarStyle(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: '系统模块',
+      collapsed: false,
+      items: [
+        {text: '幻境终端',link: 'server-terminal'},
+        {text: '领地系统',link: 'residence'},
+        {text: '每日商店',link: 'daily-shop'}
+      ]
+    }
+  ]
 }
 
 

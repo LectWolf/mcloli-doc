@@ -23,12 +23,8 @@ export const shared = defineConfig({
         logo: { src: '/dream-logo-mini.svg',width: 24, height: 24},
 
         search: {
-            provider: 'algolia',
+            provider: 'local',
             options: {
-              appId: '308Y573TTB',
-              apiKey: '02b8d3fc08f485a4209758848c592c9b',
-              indexName: 'vitepress',
-              
               locales: { ...zhSearch}
             }
           }
