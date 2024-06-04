@@ -90,8 +90,20 @@ function sidebarStyle(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {text: '幻境终端',link: 'server-terminal'},
-        {text: '领地系统',link: 'residence'},
+      ]
+    },
+    {
+      text: '福利',
+      collapsed: false,
+      items: [
         {text: '每日商店',link: 'daily-shop'}
+      ]
+    },
+    {
+      text: '实用功能',
+      collapsed: false,
+      items: [
+        {text: '领地系统',link: 'residence'}
       ]
     }
   ]

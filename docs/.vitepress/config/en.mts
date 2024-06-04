@@ -68,9 +68,22 @@ function sidebarStyle(): DefaultTheme.SidebarItem[] {
         text: 'System Modules',
         collapsed: false,
         items: [
-          { text: 'Server Terminal', link: 'server-terminal' },
-          { text: 'Residence System', link: 'residence' },
-          { text: 'Daily Shop', link: 'daily-shop' }
+          { text: 'Server Terminal', link: 'server-terminal' }
+          
+        ]
+      },
+      {
+        text: 'Benefits',
+        collapsed: false,
+        items: [
+            { text: 'Daily Shop', link: 'daily-shop' }
+        ]
+      },
+      {
+        text: 'Utility Functions',
+        collapsed: false,
+        items: [
+            { text: 'Residence System', link: 'residence' }
         ]
       }
     ];
