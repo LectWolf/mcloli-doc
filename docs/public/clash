@@ -1,0 +1,42 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: 带宽速率 100M, server: 103.19.51.28, port: 10337, type: vmess, uuid: 7c359fbe-7715-4188-95d6-be4435be77d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 1024G , server: 103.19.51.28, port: 10337, type: vmess, uuid: 7c359fbe-7715-4188-95d6-be4435be77d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本大阪, server: 103.19.51.28, port: 10337, type: vmess, uuid: 7c359fbe-7715-4188-95d6-be4435be77d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+proxy-groups:
+  - name: 🔰 节点选择
+    type: select
+    proxies:
+      - 带宽速率 100M
+      - 1024G
+      - 日本大阪
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 日本大阪
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 规则自选
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 日本大阪
+rules:
+ - GEOIP,CN,🎯 全球直连
+ - MATCH,🐟 规则自选
