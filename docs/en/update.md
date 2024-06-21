@@ -1,3 +1,0 @@
-# Update
-
-[update](/update)

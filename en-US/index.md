@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Gameplay Guide
-      link: /en/guide/how-to-play
+      link: /en-US/guide/how-to-play
     - theme: alt
       text: Changelog
-      link: /update
+      link: /en-US/update
   image:
     src: /logo.webp
     alt: DreamCloud

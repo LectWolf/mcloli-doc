@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 游玩指北
-      link: /guide/how-to-play
+      link: /zh-CN/guide/how-to-play
     - theme: alt
       text: 更新日志
-      link: /update
+      link: /zh-CN/update
   image:
     src: /logo.webp
     alt: 次梦幻境
