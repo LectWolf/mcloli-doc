@@ -76,7 +76,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "手机端教程", link: "mobile-tutorial" },
       ],
     },
-    { text: "服务器玩法", base: "/playstyle/", link: "server-terminal" },
+    { text: "服务器玩法", base: "zh-CN/playstyle/", link: "server-terminal" },
   ];
 }
 

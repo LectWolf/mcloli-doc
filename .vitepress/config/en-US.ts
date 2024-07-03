@@ -13,7 +13,7 @@ export const en_US = defineConfig({
         items: sidebarGuide(),
       },
       "/en-US/playstyle/": {
-        base: "/en/playstyle/",
+        base: "/en-US/playstyle/",
         items: sidebarStyle(),
       },
     },
@@ -60,7 +60,11 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "Mobile Tutorial", link: "mobile-tutorial" },
       ],
     },
-    { text: "Server Gameplay", base: "/playstyle/", link: "server-terminal" },
+    {
+      text: "Server Gameplay",
+      base: "/en-US/playstyle/",
+      link: "server-terminal",
+    },
   ];
 }
 
