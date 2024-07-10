@@ -66,6 +66,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "游玩指北", link: "how-to-play" },
         { text: "服务器规则", link: "server-rule" },
         { text: "常用命令", link: "common-command" },
+        { text: "皮肤设置", link: "skin-setup" },
         { text: "联系我们", link: "server-contact" },
       ],
     },

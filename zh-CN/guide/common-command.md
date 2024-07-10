@@ -16,6 +16,12 @@
 
 `/nick 昵称` 设置昵称 `e.g.` `/nick 次梦幻境`
 
+### 皮肤
+
+服务器皮肤设置教程请看 [皮肤设置](skin-setup)
+
+`/skin set 正版ID` 设置皮肤 `e.g.` `/skin set LectWolf`
+
 ### 家
 
 `/sethome` 设置家

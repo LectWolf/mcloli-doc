@@ -50,6 +50,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "Guide", link: "how-to-play" },
         { text: "Server Rule", link: "server-rule" },
         { text: "Common Commands", link: "common-command" },
+        { text: "Setup Skin", link: "skin-setup" },
         { text: "Server Contact", link: "server-contact" },
       ],
     },

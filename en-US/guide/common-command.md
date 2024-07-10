@@ -16,6 +16,12 @@
 
 `/nick nickname` Set nickname `e.g.` `/nick Dreamland`
 
+### Skin
+
+For instructions on setting server skins, please refer to [Skin Setup](skin-setup)
+
+`/skin set premiumID` Setup skin `e.g.` `/skin set LectWolf`
+
 ### Home
 
 `/sethome` Set home
